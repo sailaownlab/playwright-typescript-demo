@@ -5,7 +5,7 @@ test('Playwright website has the correct title and Get started link', async ({
 }) => {
   await page.goto('https://playwright.dev/');
 
-  await expect(page).toHaveTitle(/Playwright/);
+  await expect(page).toHaveTitle(/abc/);
 
   const getStartedLink = page.getByRole('link', {
     name: 'Get started',
